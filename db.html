@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./db.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="search">
+        <label for="filterName">Filter by Customer Name:</label>
+        <input type="text" id="filterName" oninput="displayData()">
+        
+        <label for="filterAmount">Filter by Transaction Amount:</label>
+        <input type="number" id="filterAmount" oninput="displayData()">
+    </div>
+    <div class="text" id="text">
+        
+        <table>
+           
+            <thead id="container">
+                <!-- <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr> -->
+            </thead>
+        </table>
+    </div>
+    <canvas id="transactionChart"></canvas>
+    <script src="./db.js"></script>
+</body>
+</html>
